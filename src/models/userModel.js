@@ -2,9 +2,9 @@ const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
 const userSchema = new Schema({
+  googleId: String,
   nome: String,
   sobrenome: String,
-  cpf: String,
   email: String,
   linhas: [
     {
@@ -16,9 +16,11 @@ const userSchema = new Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: "paradas"
       },
-      horario: String
+      horario_inicio: String,
+      horario_fim: String
     }
-  ]
+  ],
+  picture: String
 });
 
 mongoose.model("users", userSchema);

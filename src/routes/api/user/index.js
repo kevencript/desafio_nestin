@@ -1,5 +1,5 @@
 /**
- * routes/Auth/GoogleStrategy/index.js
+ * src/routes/api/user/index.js
  *
  * @description: This file contains all the requisitions for User handling
  *
