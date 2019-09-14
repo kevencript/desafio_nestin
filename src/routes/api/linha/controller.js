@@ -7,7 +7,6 @@
 
 const mongoose = require("mongoose");
 const User = mongoose.model("users");
-const Parada = mongoose.model("paradas");
 
 // @route    PUT /api/linha/create
 // @desc     vincular uma nova linha em um perfil
@@ -52,12 +51,4 @@ exports.delete = async (req, res) => {
     console.log(error.message);
     res.status(500).send("Server Error");
   }
-};
-
-exports.create_parada = async (req, res) => {
-  const parada = await new Parada({});
-
-  await parada.save();
-
-  res.send(parada);
 };

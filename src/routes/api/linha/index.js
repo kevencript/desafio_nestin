@@ -21,7 +21,4 @@ router.put("/create", controller.create);
 // @acess    Private
 router.delete("/delete/:id", controller.delete);
 
-// TESTANDO
-router.post("/create_parada", controller.create_parada);
-
 module.exports = router;

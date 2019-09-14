@@ -2,7 +2,8 @@ const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
 const nmrLinhaSchema = new Schema({
-  nmr_linha: String
+  nmr_linha: String,
+  desc: String
 });
 
-mongoose.model("nmrLinhas", nmrLinhaSchema);
+mongoose.model("nmr_linhas", nmrLinhaSchema);
