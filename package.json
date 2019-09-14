@@ -1,0 +1,30 @@
+{
+  "name": "feedback_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "10.15.3",
+    "npm": "6.4.1"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevencript/feedback_app.git"
+  },
+  "author": "Gabriel Braga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevencript/feedback_app/issues"
+  },
+  "homepage": "https://github.com/kevencript/feedback_app#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.7.0",
+    "nodemon": "^1.19.2",
+    "require-dir": "^1.2.0"
+  }
+}
